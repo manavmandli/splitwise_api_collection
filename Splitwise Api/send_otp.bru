@@ -1,0 +1,17 @@
+meta {
+  name: send_otp
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://65.20.77.48:8001/api/method/splitwise.mobile.v1.api.send_otp
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mobile_no": "8128722990"
+  }
+}

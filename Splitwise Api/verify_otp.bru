@@ -1,0 +1,18 @@
+meta {
+  name: verify_otp
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://65.20.77.48:8001/api/method/splitwise.mobile.v1.api.verify_otp
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "mobile_no": "8128722990",
+    "otp": "385116"
+  }
+}
