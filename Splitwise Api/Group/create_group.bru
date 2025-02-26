@@ -1,0 +1,29 @@
+meta {
+  name: create_group
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseURL}}splitwise.mobile.v1.create_group
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "group_name": "Travel Buddies",
+    "users": [
+      {
+        "email": "jignesh@nesscale.com",
+        "mobile_no": "9913574852",
+        "first_name":"Jignesh"
+      },
+      {
+        "email": "jane@example.com",
+        "mobile_no": "9876543210",
+        "first_name":"Jane Man"
+      }
+    ]
+  }
+}
