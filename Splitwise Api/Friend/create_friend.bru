@@ -1,0 +1,19 @@
+meta {
+  name: create_friend
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseURL}}splitwise.mobile.v1.create_friend
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "rushi@nesscale.com",
+    "mobile_no": "9913572290",
+    "first_name":"rushi patel"
+  }
+}
